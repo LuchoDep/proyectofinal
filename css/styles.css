@@ -1,0 +1,345 @@
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+body {
+    font-family: "Lato", sans-serif;
+}
+
+
+.background__Body {
+    background-color: #111;
+    color: #f1f1f1;
+    /* border: red 2px solid; */
+}
+
+
+.alineacion__HeaderFooter {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #333;
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+
+nav {
+    display: block;
+    text-align: right;
+    font-size: 20px;
+    padding-right: 12px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+nav ul li {
+    float: left;
+}
+
+nav ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    background-color: #111;
+}
+
+a:link {
+    color: azure;
+    text-decoration: none;
+}
+
+a:visited {
+    color: azure;
+    text-decoration: none;
+}
+
+.titulo_logo {
+    height: 100px;
+}
+
+.subtitulos {
+    padding-left: 50px;
+    padding-top: 50px;
+    padding-bottom: 30px;
+    font-size: 50px;
+    text-align: start;
+    color: white;
+}
+
+.subtitulos2 {
+    padding-top: 20px;
+    padding-left: 40px;
+    margin-bottom: 20px;
+    font-size: 35px;
+    text-align: left;
+}
+
+.subtitulos2_derecha {
+    font-size: 50px;
+    padding-top: 30px;
+    padding-right: 150px;
+    text-align: right;
+}
+
+
+footer {
+    display: flex;
+    align-items: center;
+    background-color: #333;
+    height: 100px;
+}
+
+.footer__texto {
+    font-size: 12px;
+    padding-left: 20px;
+    align-items: flex-start;
+}
+
+.barra__social {
+    display: flex;
+
+}
+
+.footer__Buttons {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+.footer__Buttons a {
+    text-decoration: none;
+    font-size: 25px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    background: yellowgreen;
+    color: #f1f1f1;
+    border-radius: 50%;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, .5);
+    transition: all .4s ease-in-out;
+}
+
+.footer__Buttons a:hover {
+    transform: scale(1.2);
+}
+
+/*CLASES INDEX */
+
+
+.index__Banda {
+    box-sizing: content-box;
+    font-size: 25px;
+    margin-top: 5px;
+    /* border: 2px solid greenyellow; */
+}
+
+
+.index__Fuentes {
+    box-sizing: content-box;
+    font-size: 25px;
+}
+
+
+/*CLASES DISCOGRAFÍA*/
+
+.spotify_playlist {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 30px;
+}
+
+/*CLASES GALERÍA*/
+
+.galería__imagenes {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding-top: 80px;
+    padding-left: 90px;
+}
+
+.galería__imagenes-size {
+    height: 600px;
+    width: auto;
+    object-fit: cover;
+}
+
+.galería__videos {
+    margin-top: 30px;
+    padding-left: 40px;
+    padding-bottom: 20px;
+}
+
+/* CLASES TOUR Y CONTACTO*/
+
+.body_contacto {
+    height: 100%;
+    font-family: "Lato", sans-serif;
+    color: white;
+    background-color: black;
+}
+
+.contact_form {
+    width: 800px;
+    height: auto;
+    margin: 80px auto;
+    border-radius: 10px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    background-color: black;
+    padding-left: 30px;
+}
+
+input {
+    background-color: white;
+    width: 408px;
+    height: 40px;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #461111;
+    margin-top: 10px;
+    padding-left: 10px;
+    margin-bottom: 20px;
+}
+
+textarea {
+    background-color: white;
+    width: 750px;
+    height: 150px;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #461111;
+    margin-top: 10px;
+    padding-left: 10px;
+    margin-bottom: 20px;
+    padding-top: 15px;
+}
+
+label {
+    display: block;
+    float: center;
+}
+
+button {
+    height: 45px;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    text-transform: uppercase;
+    background-color: #461111;
+    border-color: #461111;
+    border-style: solid;
+    border-radius: 10px;
+    width: 420px;
+}
+
+button p {
+    color: #fff;
+}
+
+span {
+    color: #461111;
+}
+
+.aviso {
+    font-size: 13px;
+    color: white;
+}
+
+h1 {
+    font-size: 39px;
+    text-align: letf;
+    padding-bottom: 20px;
+    color: #461111;
+}
+
+h3 {
+    font-size: 16px;
+    padding-bottom: 30px;
+    color: white;
+}
+
+p {
+    font-size: 14px;
+    color: white;
+}
+
+.formulario input:focus {
+    outline: 0;
+    border: 1px solid #461111;
+}
+
+.formulario textarea:focus {
+    outline: 0;
+    border: 1px solid #461111;
+}
+
+.contact_form2 {
+    width: 1200px;
+    height: 1000;
+    margin: 80px auto;
+    border-radius: 10px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    background-color: black;
+    padding-left: 30px;
+}
+
+table {
+    table-layout: fixed;
+    width: 98%;
+    border-collapse: collapse;
+    border: 3px solid #461111;
+}
+
+table {
+    border: #461111 3px solid;
+}
+
+td,
+th {
+    border: #461111 3px solid;
+    padding: 20px;
+}
+
+.tabla__tour {
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+.tabla__tour-boton {
+    height: 45px;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    text-transform: uppercase;
+    background-color: #b3541e;
+    border-color: #b3541e;
+    border-style: solid;
+    border-radius: 10px;
+    width: 150px;
+    float: right;
+    color: white;
+}
+
+/*MEDIA QUERIES */
