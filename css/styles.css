@@ -180,20 +180,7 @@ button p {
         height: auto;
     }
 
-    iframe {
-        width: 560px;
-        height: 315px;
-    }
 }
-
-
-@media screen and (min-width: 1200px) {
-    iframe {
-        width: 560px;
-        height: 315px;
-    }
-}
-
 
 @media screen and (max-width: 768px) {
     .fuentes {
@@ -213,20 +200,10 @@ button p {
         font-size: 25px;
     }
 
-    iframe {
-        width: 480px;
-        height: auto;
-    }
-
 }
 
 @media screen and (max-width: 576px) {
     .fuentes {
         font-size: 15px;
-    }
-
-    iframe {
-        width: 480px;
-        height: auto;
     }
 }
