@@ -3,15 +3,11 @@
     padding: 0%;
 }
 
-body {
-    font-family: "Lato", sans-serif;
-}
-
 
 .background__Body {
+    font-family: "Lato", sans-serif;
     background-color: #111;
     color: #f1f1f1;
-    /* border: red 2px solid; */
 }
 
 
@@ -72,7 +68,6 @@ a:visited {
 
 .subtitulos {
     padding-left: 50px;
-    padding-top: 50px;
     padding-bottom: 30px;
     font-size: 50px;
     text-align: start;
@@ -93,12 +88,6 @@ footer {
     align-items: center;
     background-color: #333;
     height: 100px;
-}
-
-.footer__texto {
-    font-size: 12px;
-    padding-left: 20px;
-    align-items: flex-start;
 }
 
 .barra__social {
@@ -144,36 +133,6 @@ footer {
     padding-bottom: 20px;
 }
 
-/*CLASES DISCOGRAFÍA*/
-
-.spotify_playlist {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin-top: 30px;
-    padding-bottom: 30px;
-}
-
-/* CLASES TOUR Y CONTACTO*/
-
-.body_contacto {
-    height: 100%;
-    font-family: "Lato", sans-serif;
-    color: white;
-    background-color: black;
-}
-
-.contact_form {
-    width: 800px;
-    height: auto;
-    margin: 80px auto;
-    border-radius: 10px;
-    padding-top: 30px;
-    padding-bottom: 20px;
-    background-color: black;
-    padding-left: 30px;
-}
-
 input {
     background-color: white;
     width: 408px;
@@ -181,25 +140,12 @@ input {
     border-radius: 5px;
     border-style: solid;
     border-width: 1px;
-    border-color: #461111;
+    border-color: #5cb85c;
     margin-top: 10px;
     padding-left: 10px;
     margin-bottom: 20px;
 }
 
-textarea {
-    background-color: white;
-    width: 750px;
-    height: 150px;
-    border-radius: 5px;
-    border-style: solid;
-    border-width: 1px;
-    border-color: #461111;
-    margin-top: 10px;
-    padding-left: 10px;
-    margin-bottom: 20px;
-    padding-top: 15px;
-}
 
 label {
     display: block;
@@ -213,8 +159,8 @@ button {
     margin-bottom: 20px;
     margin-top: 10px;
     text-transform: uppercase;
-    background-color: #461111;
-    border-color: #461111;
+    background-color: #5cb85c;
+    border-color: #5cb85c;
     border-style: solid;
     border-radius: 10px;
     width: 420px;
@@ -223,95 +169,6 @@ button {
 button p {
     color: #fff;
 }
-
-span {
-    color: #461111;
-}
-
-.aviso {
-    font-size: 13px;
-    color: white;
-}
-
-h1 {
-    font-size: 39px;
-    text-align: letf;
-    padding-bottom: 20px;
-    color: #461111;
-}
-
-h3 {
-    font-size: 16px;
-    padding-bottom: 30px;
-    color: white;
-}
-
-p {
-    font-size: 14px;
-    color: white;
-}
-
-.formulario input:focus {
-    outline: 0;
-    border: 1px solid #461111;
-}
-
-.formulario textarea:focus {
-    outline: 0;
-    border: 1px solid #461111;
-}
-
-.contact_form2 {
-    width: 1200px;
-    height: 1000;
-    margin: 80px auto;
-    border-radius: 10px;
-    padding-top: 30px;
-    padding-bottom: 20px;
-    background-color: black;
-    padding-left: 30px;
-}
-
-table {
-    table-layout: fixed;
-    width: 98%;
-    border-collapse: collapse;
-    border: 3px solid #461111;
-}
-
-table {
-    border: #461111 3px solid;
-}
-
-td,
-th {
-    border: #461111 3px solid;
-    padding: 20px;
-}
-
-.tabla__tour {
-    text-transform: uppercase;
-    font-size: 20px;
-}
-
-.tabla__tour-boton {
-    height: 45px;
-    padding-left: 5px;
-    padding-right: 5px;
-    margin-bottom: 20px;
-    margin-top: 10px;
-    text-transform: uppercase;
-    background-color: #b3541e;
-    border-color: #b3541e;
-    border-style: solid;
-    border-radius: 10px;
-    width: 150px;
-    float: right;
-    color: white;
-    font-size: 12px;
-}
-
-/*MEDIA QUERIES */
 
 @media screen and (max-width: 1199px) {
     .fuentes {

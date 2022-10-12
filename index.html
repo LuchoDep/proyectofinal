@@ -11,6 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital@1&display=swap" rel="stylesheet" />
     <script src="https://kit.fontawesome.com/8fcc646316.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
 </head>
@@ -23,23 +24,31 @@
                     <img src="images/logo.png" alt="logo megadeth" class="titulo_logo img-fluid" style="width: 40%" />
                 </div>
 
-                <nav class="navbar">
-                    <ul>
-                        <li><a href="index.html">Inicio</a></li>
-                        <li><a href="pages/miembros.html">Miembros</a></li>
-                        <li><a href="pages/discografia.html">Discografía</a></li>
-                        <li><a href="pages/tour.html">Tour</a></li>
-                        <li><a href="pages/contacto.html">Contacto</a></li>
-                    </ul>
+                <nav class="navbar navbar-expand-sm navbar-dark">
+                    <div class="container">
+                        <button class="navbar-toggler ms-auto w-100" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#n_bar" aria-controls="navbarNavAltMarkup" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="n_bar">
+                            <ul class="navbar-nav">
+                                <li><a href="index.html">Inicio</a></li>
+                                <li><a href="pages/miembros.html">Miembros</a></li>
+                                <li><a href="pages/discografia.html">Discografía</a></li>
+                                <li><a href="pages/tour.html">Tour</a></li>
+                                <li><a href="pages/contacto.html">Contacto</a></li>
+                            </ul>
+                        </div>
+                    </div>
                 </nav>
             </div>
         </header>
     </div>
 
     <main class="background__Body py-5">
-        <div class="container-fluid background__Body px-4">
-            <div class="row justify-content-center" style="width: 100%">
-                <div class="col-12">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12">
                     <h1 class="subtitulos">Megadeth</h1>
                     <div class="banda text-center">
                         <p class="fuentes">
@@ -64,52 +73,11 @@
                 </div>
             </div>
 
-            <div class="row justify-content-evenly" style="width: 100%">
-                <div class="col p-3">
-                    <iframe src="https://www.youtube.com/embed/qHMUyHZi440?list=PLFJaod-oManE5gpqkzyhbspshu6mL7drM"
-                        title="Megadeth - " Public Enemy No. 1" - TH1RT3EN (2011)" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen class="galería__videos"></iframe>
-
-                    <iframe src="https://www.youtube.com/embed/HdY2m9FSUpw?list=PLFJaod-oManE5gpqkzyhbspshu6mL7drM"
-                        title="Megadeth - " À Tout le Monde (Set Me Free)" - United Abominations (2007) (Album Version)"
-                        frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen class="galería__videos"></iframe>
-                </div>
-                <div class="col p-3">
-                    <iframe src="https://www.youtube.com/embed/Gx_EV6u2MH0?list=PLFJaod-oManE5gpqkzyhbspshu6mL7drM"
-                        title="Megadeth - " Whose Life (Is It Anyways?)" - TH1RT3EN (2011) [Lyrics Video]"
-                        frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen class="galería__videos"></iframe>
-
-                    <iframe src="https://www.youtube.com/embed/rUGIocJK9Tc?list=PLFJaod-oManE5gpqkzyhbspshu6mL7drM"
-                        title="Megadeth - Hangar 18" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen class="galería__videos"></iframe>
-                </div>
-                <div class="col p-3">
-                    <iframe src="https://www.youtube.com/embed/PZhqZAVGTqw?list=PLFJaod-oManE5gpqkzyhbspshu6mL7drM"
-                        title="Megadeth - Super Collider" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen class="galería__videos"></iframe>
-
-                    <iframe src="https://www.youtube.com/embed/rnuFDczAkyM"
-                        title="Megadeth - Whose Life [Is It Anyways?] (LYRIC VIDEO)" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen class="galería__videos"></iframe>
-                </div>
-            </div>
         </div>
     </main>
 
     <div class="container-fluid">
         <footer class="row ">
-            <div class="col alineacion__HeaderFooter footer__texto ">
-                <p>Fanpage sin fines de lucro.</p>
-            </div>
-
             <div class="col barra__social">
                 <ul class="footer__Buttons">
                     <li><a href="https://twitter.com/Megadeth" class="fa fa-twitter" target="_blank"></a></li>
@@ -125,7 +93,11 @@
         </footer>
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
         crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+        crossorigin="anonymous"></script>
+
 </body>

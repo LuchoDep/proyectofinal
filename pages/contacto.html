@@ -11,6 +11,7 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 	<link href="https://fonts.googleapis.com/css2?family=Lato:ital@1&display=swap" rel="stylesheet" />
 	<script src="https://kit.fontawesome.com/8fcc646316.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
 		integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
 </head>
@@ -23,14 +24,22 @@
 					<img src="../images/logo.png" alt="logo megadeth" class="titulo_logo img-fluid"
 						style="width: 40%" />
 				</div>
-				<nav>
-					<ul>
-						<li><a href="../index.html">Inicio</a></li>
-						<li><a href="miembros.html">Miembros</a></li>
-						<li><a href="discografia.html">Discografía</a></li>
-						<li><a href="tour.html">Tour</a></li>
-						<li><a href="contacto.html">Contacto</a></li>
-					</ul>
+				<nav class="navbar navbar-expand-sm navbar-dark">
+					<div class="container">
+						<button class="navbar-toggler ms-auto w-100" type="button" data-bs-toggle="collapse"
+							data-bs-target="#n_bar" aria-controls="navbarNavAltMarkup" aria-label="Toggle navigation">
+							<span class="navbar-toggler-icon"></span>
+						</button>
+						<div class="collapse navbar-collapse" id="n_bar">
+							<ul class="navbar-nav">
+								<li><a href="../index.html">Inicio</a></li>
+								<li><a href="miembros.html">Miembros</a></li>
+								<li><a href="discografia.html">Discografía</a></li>
+								<li><a href="tour.html">Tour</a></li>
+								<li><a href="contacto.html">Contacto</a></li>
+							</ul>
+						</div>
+					</div>
 				</nav>
 			</div>
 		</header>
@@ -38,42 +47,40 @@
 
 	<main class="background__Body py-5" style="height: 70vh;">
 		<div class="container-fluid background__Body">
-			<form class="row g-3 justify-content-center align-items-start">
-				<div class="col-5">
-					<div class="col-md-6">
-						<label for="exampleFormControlInput1" class="form-label">Nombre y apellido</label>
-						<input type="email" class="form-control" id="exampleFormControlInput1"
-							placeholder="Escribe tu nombre y apellido">
+
+			<div class="form-area">
+				<div class="container">
+					<div class="row single-form g-0">
+						<div class="col-sm-12 col-lg-6">
+							<h2> <span>Tu opinión nos interesa</span> <br> Dejanos tu mensaje</h2>
+						</div>
 					</div>
-					<div class="col-md-6">
-						<label for="exampleFormControlInput1" class="form-label">Dirección de email</label>
-						<input type="email" class="form-control" id="exampleFormControlInput1"
-							placeholder="Escribe tu Email">
+					<div class="col-sm-12 col-lg6">
+						<form>
+							<div class="mb-3">
+								<label for="exampleFormControlTextarea1" class="form-label">Nombre y
+									apellido</label>
+								<input type="text" class="form-control" placeholder="Escribe tu nombre y apellido">
+							</div>
+							<div class="mb-3">
+								<label for="exampleInputEmail1" class="form-label">Dirección de email</label>
+								<input type="email" class="form-control" id="exampleInputEmail1"
+									aria-describedby="emailHelp" placeholder="Escribe tu Email">
+							</div>
+							<div class="mb-3">
+								<label for="exampleFormControlTextarea1" class="form-label">Mensaje</label>
+								<textarea class="form-control" id="exampleFormControlTextarea1"></textarea>
+							</div>
+							<button type="submit" class="btn btn-success btn-primary">Enviar</button>
+						</form>
 					</div>
-					<div class="col-md-6">
-						<label for="exampleFormControlInput1" class="form-label">Teléfono</label>
-						<input type="email" class="form-control" id="exampleFormControlInput1"
-							placeholder="Escribe tu número de teléfono">
-					</div>
-					<div class="col-md-6">
-						<label for="exampleFormControlTextarea1" class="form-label">Mensaje</label>
-						<textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
-							placeholder="Deja aquí tu comentario..."></textarea>
-					</div>
-					<button class="col-md-4" type="submit" name="enviar_formulario" id="enviar">
-						<p>Enviar</p>
-					</button>
 				</div>
-			</form>
+			</div>
 		</div>
 	</main>
 
 	<div class="container-fluid">
 		<footer class="row ">
-			<div class="col alineacion__HeaderFooter footer__texto ">
-				<p>Fan Page sin fines de lucro.</p>
-			</div>
-
 			<div class="col barra__social">
 				<ul class="footer__Buttons">
 					<li><a href="https://twitter.com/Megadeth" class="fa fa-twitter" target="_blank"></a></li>
@@ -89,8 +96,11 @@
 		</footer>
 	</div>
 
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
-		integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+		integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+		crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+		integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
 		crossorigin="anonymous"></script>
 </body>
 
