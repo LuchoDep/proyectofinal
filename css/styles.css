@@ -87,13 +87,6 @@ a:visited {
     text-align: left;
 }
 
-.subtitulos2_derecha {
-    font-size: 50px;
-    padding-top: 30px;
-    padding-right: 150px;
-    text-align: right;
-}
-
 
 footer {
     display: flex;
@@ -137,53 +130,28 @@ footer {
     transform: scale(1.2);
 }
 
-/*CLASES INDEX */
+.fuentes {
+    font-size: 25px;
+}
 
-
-.index__Banda {
+.banda {
     box-sizing: content-box;
     font-size: 25px;
     margin-top: 5px;
-    /* border: 2px solid greenyellow; */
 }
 
-
-.index__Fuentes {
-    box-sizing: content-box;
-    font-size: 25px;
+.espaciado {
+    padding-bottom: 20px;
 }
-
 
 /*CLASES DISCOGRAFÍA*/
 
 .spotify_playlist {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-between;
     margin-top: 30px;
-}
-
-/*CLASES GALERÍA*/
-
-.galería__imagenes {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    padding-top: 80px;
-    padding-left: 90px;
-}
-
-.galería__imagenes-size {
-    height: 600px;
-    width: auto;
-    object-fit: cover;
-}
-
-.galería__videos {
-    margin-top: 30px;
-    padding-left: 40px;
-    padding-bottom: 20px;
+    padding-bottom: 30px;
 }
 
 /* CLASES TOUR Y CONTACTO*/
@@ -340,6 +308,68 @@ th {
     width: 150px;
     float: right;
     color: white;
+    font-size: 12px;
 }
 
 /*MEDIA QUERIES */
+
+@media screen and (max-width: 1199px) {
+    .fuentes {
+        font-size: 20px;
+    }
+
+    img.banda {
+        width: 50%;
+        height: auto;
+    }
+
+    iframe {
+        width: 560px;
+        height: 315px;
+    }
+}
+
+
+@media screen and (min-width: 1200px) {
+    iframe {
+        width: 560px;
+        height: 315px;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .fuentes {
+        font-size: 17px;
+    }
+
+    img.banda {
+        width: 40%;
+        height: auto;
+    }
+
+    .subtitulos {
+        font-size: 40px;
+    }
+
+    .subtitulos2 {
+        font-size: 25px;
+    }
+
+    iframe {
+        width: 480px;
+        height: auto;
+    }
+
+}
+
+@media screen and (max-width: 576px) {
+    .fuentes {
+        font-size: 15px;
+    }
+
+    iframe {
+        width: 480px;
+        height: auto;
+    }
+}
