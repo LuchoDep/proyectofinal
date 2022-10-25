@@ -1,0 +1,212 @@
+@import "variables";
+
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+
+.background__Body {
+    font-family: "Lato", sans-serif;
+    background-color: $color_bg;
+    color: $color_font;
+}
+
+
+.alineacion__HeaderFooter {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background-color: $color_bg2;
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+
+nav {
+    display: block;
+    text-align: right;
+    font-size: 20px;
+    padding-right: 12px;
+
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: $color_bg2;
+
+        li {
+            float: left;
+
+            a {
+                display: block;
+                color: white;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+            }
+
+            a:hover {
+                background-color: $color_bg;
+            }
+        }
+    }
+}
+
+
+a:link {
+    color: azure;
+    text-decoration: none;
+}
+
+a:visited {
+    color: azure;
+    text-decoration: none;
+}
+
+.titulo_logo {
+    height: 100px;
+}
+
+.subtitulos {
+    padding-left: 50px;
+    padding-bottom: 30px;
+    font-size: 50px;
+    text-align: start;
+    color: white;
+}
+
+.subtitulos2 {
+    padding-top: 20px;
+    padding-left: 40px;
+    margin-bottom: 20px;
+    font-size: 35px;
+    text-align: left;
+}
+
+
+footer {
+    display: flex;
+    align-items: center;
+    background-color: $color_bg2;
+    height: 100px;
+}
+
+.barra__social {
+    display: flex;
+
+}
+
+.footer__Buttons {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+.footer__Buttons a {
+    text-decoration: none;
+    font-size: 25px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    background: $color_botones;
+    color: $color_font;
+    border-radius: 50%;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, .5);
+    transition: all .4s ease-in-out;
+}
+
+.footer__Buttons a:hover {
+    transform: scale(1.2);
+}
+
+.fuentes {
+    font-size: 25px;
+}
+
+.banda {
+    box-sizing: content-box;
+    font-size: 25px;
+    margin-top: 5px;
+}
+
+.espaciado {
+    padding-bottom: 20px;
+}
+
+input {
+    background-color: white;
+    width: 408px;
+    height: 40px;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: $color_botones;
+    margin-top: 10px;
+    padding-left: 10px;
+    margin-bottom: 20px;
+}
+
+
+label {
+    display: block;
+    float: center;
+}
+
+button {
+    height: 45px;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    text-transform: uppercase;
+    background-color: $color_botones;
+    border-color: $color_botones;
+    border-style: solid;
+    border-radius: 10px;
+    width: 420px;
+}
+
+button p {
+    color: #fff;
+}
+
+@media screen and (max-width: 1199px) {
+    .fuentes {
+        font-size: 20px;
+    }
+
+    img.banda {
+        width: 50%;
+        height: auto;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    .fuentes {
+        font-size: 17px;
+    }
+
+    img.banda {
+        width: 40%;
+        height: auto;
+    }
+
+    .subtitulos {
+        font-size: 40px;
+    }
+
+    .subtitulos2 {
+        font-size: 25px;
+    }
+
+}
+
+@media screen and (max-width: 576px) {
+    .fuentes {
+        font-size: 15px;
+    }
+}
